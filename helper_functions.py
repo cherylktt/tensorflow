@@ -38,7 +38,7 @@ def walk_through_dir(dir_path):
 # Import an image and resize it to be able to be used with our model
 import tensorflow as tf
 
-def load_and_pre_image(filename, img_shape=224, scale=True):
+def load_and_prep_image(filename, img_shape=224, scale=True):
     """
     Reads in an image from filename, turns it into a tensor and reshapes into (224, 224, 3).
 
