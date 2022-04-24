@@ -151,7 +151,7 @@ def create_model(model_url, num_classes=10):
   return model
 
 # Evaluate the model
-def evaluate_model(model, x, test_data=test_data):
+def evaluate_model(model, x, test_data):
     """
     Evaluate the loss and accuracy of model x on test data.
     """
