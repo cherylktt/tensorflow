@@ -187,6 +187,7 @@ def plot_loss_curves(history):
     plt.legend()
 
     # Plot accuracy
+    plt.figure()
     plt.plot(epochs, accuracy, label="training accuracy")
     plt.plot(epochs, val_accuracy, label="validation accuracy")
     plt.title("Accuracy")
