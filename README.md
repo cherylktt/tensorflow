@@ -1,5 +1,5 @@
 # Deep Learning in TensorFlow
-Collection of Google Colab notebooks created while following ZTM course.
+Collection of Google Colab notebooks created with reference to a TensorFlow course by ZeroToMastery.
 
 ## TensorFlow resources
 * [Documentation on Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)
