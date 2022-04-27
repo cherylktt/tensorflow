@@ -1,2 +1,39 @@
-# Google Colab notebooks on TensorFlow
-Based on course material from ZTM
+# Deep Learning in TensorFlow
+Collection of Google Colab notebooks created while following ZTM course.
+
+## TensorFlow resources
+* [Documentation on Adam](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)
+* [Documentation on Softmax Activation](https://www.tensorflow.org/api_docs/python/tf/keras/activations/softmax)
+* [TensorFlow Classification Tutorial](https://www.tensorflow.org/tutorials/keras/classification)
+* [TensorFlow Data Augmentation Tutorial](https://www.tensorflow.org/tutorials/images/data_augmentation)
+* [TensorFlow Transfer Learning Tutorial](https://www.tensorflow.org/tutorials/images/transfer_learning)
+* [Transfer Learning with TensorFlow Hub Tutorial](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub)
+* [Fine-tuning a TensorFlow Hub Model Tutorial](https://www.tensorflow.org/hub/tf2_saved_model#fine-tuning)
+* [Documentation on Learning Rate Scheduling](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/LearningRateScheduler)
+* [Documentation on EarlyStopping Callback](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping)
+* [Overview of TensorFlow Datasets](https://www.tensorflow.org/datasets/overview)
+* [TensorFlow Data Performance Guide](https://www.tensorflow.org/guide/data_performance)
+* [TensorFlow Mixed Precision Training Guide](https://www.tensorflow.org/guide/mixed_precision)
+* [TensorFlow Text loading Tutorial](https://www.tensorflow.org/tutorials/load_data/text)
+* [Classification on Imbalanced Data Tutorial](https://www.tensorflow.org/tutorials/structured_data/imbalanced_data)
+* [Documentation on Embedding Layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Embedding)
+* [Documentation on clone_model](https://www.tensorflow.org/api_docs/python/tf/keras/models/clone_model)
+* [TensorFlow Save and Load Model Tutorial](https://www.tensorflow.org/tutorials/keras/save_and_load)
+* [TensorFlow Recurrent Neural Network Guide](https://www.tensorflow.org/guide/keras/rnn)
+
+## List of reading materials and resources
+* [MIT's Introduction to Deep Learning Lecture](https://youtu.be/njKP3FqW3Sk)
+* [CNN Explainer](https://poloclub.github.io/cnn-explainer/)
+* [Details on EfficientNet](https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html)
+* [Universal Language Model Fine-tuning for Text Classification Paper](https://arxiv.org/abs/1801.06146)
+* [Scikit-learn Machine Learning Map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
+* [Sklearn Documentation on Evaluation Metrics](https://scikit-learn.org/stable/modules/model_evaluation.html)
+* [A Simple Introduction to NLP](https://becominghuman.ai/a-simple-introduction-to-natural-language-processing-ea66a1747b32)
+* [How to solve 90% of NLP problems: a step-by-step guide](https://blog.insightdatascience.com/how-to-solve-90-of-nlp-problems-a-step-by-step-guide-fda605278e4e)
+* [The Illustrated Word2vec](http://jalammar.github.io/illustrated-word2vec/)
+* [MIT's Sequence Modelling Lecture](https://youtu.be/QvkQ1B3FBqA?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
+* [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+* [Illustrated Guide to LSTM's and GRU's](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
+* [Universal Sentence Encoder Paper](https://arxiv.org/abs/1803.11175)
+* [Text Classification with NLP: Tf-Idf vs Word2Vec vs BERT](https://towardsdatascience.com/text-classification-with-nlp-tf-idf-vs-word2vec-vs-bert-41ff868d1794)
