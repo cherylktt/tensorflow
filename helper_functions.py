@@ -413,6 +413,20 @@ def make_confusion_matrix(y_true, y_pred, classes=None, figsize=(10, 10), text_s
   if savefig:
     fig.savefig("confusion_matrix.png")
  
+# Create function to read the lines of a document
+def get_lines(filename):
+  """
+  Reads filename (a text filename) and returns the lines of text as a list.
+
+  Args:
+    filename (str): contains the target filepath
+  
+  Returns:
+    A list of strings with one string per line form the target filename.
+  """
+
+  with open(filename, "r") as f:
+    return f.readlines()
 
 # Preprocess text with line numbers (NLP)
 def preprocess_text_with_line_numbers(filename):
