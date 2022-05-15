@@ -412,3 +412,43 @@ def make_confusion_matrix(y_true, y_pred, classes=None, figsize=(10, 10), text_s
   # Save the figure to the current working directory
   if savefig:
     fig.savefig("confusion_matrix.png")
+ 
+
+# Preprocess text with line numbers (NLP)
+def preprocess_text_with_line_numbers(filename):
+  """
+  Returns a list of dictionaries of abstract line data.
+
+  Takes in filename, reads its contents and sorts through each line,
+  extracting things like the target lable, the text of the sentence,
+  how many sentences are in the current abstract and what sentence
+  number the target line is.
+  """
+
+  input_lines = get_lines(filename) # get all lines from filename
+  abstract_lines = "" # create an empty abstract
+  abstract_samples = [] # create an empty list of abstracts
+
+  # loop through each line in the target file
+  for line in input_lines:
+    if line.startswith("###"): # check to see if the line is an ID line
+      abstract_id = line
+      abstract_lines = "" # reset the abstract string if the line is an ID line
+      
+    elif line.isspace(): # check to see if the line is a new line
+      abstract_line_split = abstract_lines.splitlines() # split abstract into separate lines
+
+      # iterate through each line in a single abstract and count them at the same time
+      for abstract_line_number, abstract_line in enumerate(abstract_line_split):
+        line_data = {} # create an empty dictionary for each line
+        target_text_split = abstract_line.split("\t") # split target label from text
+        line_data["line_number"] = abstract_line_number # what number line does the line appear in the abstract
+        line_data["target"] = target_text_split[0] # get target label
+        line_data["text"] = target_text_split[1].lower()  # get text and lower it
+        line_data["total_lines"] = len(abstract_line_split) - 1 # how many total lines are there in the target abstract? (start from 0)
+        abstract_samples.append(line_data) # add line_data to abstract_samples list
+
+    else: # if the above conditions aren't fulfilled, the line contains a labelled sentence
+      abstract_lines += line
+  
+  return abstract_samples
